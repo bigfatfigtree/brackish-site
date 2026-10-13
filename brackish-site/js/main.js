@@ -103,3 +103,29 @@
     setFilter(params.get('cat') || 'all');
   }
 })();
+
+/* Newsletter form: AJAX submit, no page navigation */
+(function(){
+  var form = document.querySelector('.news-form');
+  if (!form) return;
+  // status line for inline feedback
+  var status = document.createElement('p');
+  status.className = 'news-status';
+  status.style.cssText = 'font-size:14px;margin-top:10px;min-height:20px;color:#B9B2A1';
+  form.appendChild(status);
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[name="email"]');
+    if (!email || !email.value) return;
+    if (btn) { btn.disabled = true; btn.textContent = 'JOINING…'; }
+    status.textContent = '';
+    var data = new URLSearchParams(new FormData(form)).toString();
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data})
+      .then(function(r){ if(!r.ok) throw new Error('net'); window.location.href = '/thanks.html'; })
+      .catch(function(){
+        if (btn) { btn.disabled = false; btn.innerHTML = 'SUBSCRIBE &rarr;'; }
+        status.textContent = "Hmm — signups are taking a quick break. Please try again in a bit.";
+      });
+  });
+})();
