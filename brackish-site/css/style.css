@@ -427,6 +427,26 @@ span.profile-photo.monogram{display:flex;align-items:center;justify-content:cent
 @media(max-width:700px){.photo-credits ul{columns:1}}
 .vote-done h3{font-family:var(--serif);font-size:32px;margin-bottom:8px}
 .vote-done p{color:#B9B2A1}
+/* chained voting: confirmation + newsletter modal */
+.vote-confirm{padding:56px 28px;text-align:center;background:var(--ink);color:#fff}
+.vote-confirm .check{font-size:44px;display:block;margin-bottom:10px}
+.vote-confirm h3{font-family:var(--serif);font-size:32px;margin-bottom:8px}
+.vote-confirm p{color:#B9B2A1;margin-bottom:26px}
+.btn-next{display:inline-block;background:#E03131;color:#fff;font-weight:700;letter-spacing:.1em;padding:16px 38px;border:none;cursor:pointer;font-size:15px;font-family:inherit}
+.btn-next:hover{background:#c22727}
+.news-modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;background:rgba(15,15,12,.74);padding:20px}
+.news-modal.open{display:flex}
+.news-modal-card{background:var(--paper);max-width:470px;width:100%;padding:46px 40px 36px;text-align:center;position:relative;border-top:6px solid #E03131;max-height:90vh;overflow:auto}
+.news-modal-card .kicker{color:#E03131;margin-bottom:6px}
+.news-modal-card h3{font-family:var(--serif);font-size:30px;margin:8px 0 10px;line-height:1.2}
+.news-modal-card p{color:var(--muted);font-size:15px;margin-bottom:22px}
+.news-modal-card form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.news-modal-card input[type=email]{flex:1;min-width:200px;padding:14px 16px;border:1px solid var(--line);font-size:15px;background:#fff;font-family:inherit}
+.news-modal-close{position:absolute;top:10px;right:14px;background:none;border:none;font-size:26px;cursor:pointer;color:var(--muted);line-height:1}
+.news-modal .dismiss{display:block;margin:18px auto 0;background:none;border:none;color:var(--muted);font-size:13px;cursor:pointer;text-decoration:underline;font-family:inherit}
+.news-modal-success{display:none}
+.news-modal-success h3{font-family:var(--serif);font-size:28px;margin-bottom:8px}
+.news-modal-success p{color:var(--muted)}
 .bye-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .bye-card{border:1px solid var(--line);padding:24px;background:var(--paper)}
 .bye-card .cont-name{font-size:22px}

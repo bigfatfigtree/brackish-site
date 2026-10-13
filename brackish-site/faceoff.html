@@ -626,18 +626,26 @@
 
 <script src="js/main.js"></script>
 <script>
-// Faceoff voting: mark voted matchups from ?voted=mN or localStorage
+// Faceoff voting: AJAX submit (no page reload), chain to next matchup,
+// newsletter modal after 2nd vote.
 (function(){
   var ids = ['m1','m2','m3','m4','m5','m6','m7','m8'];
+
+  function lsGet(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }
+  function lsSet(k,v){ try { localStorage.setItem(k, v); } catch(e){} }
+
+  // legacy ?voted=mN links still mark the vote
   var params = new URLSearchParams(window.location.search);
   var justVoted = params.get('voted');
-  if (justVoted && ids.indexOf(justVoted) !== -1) {
-    try { localStorage.setItem('brackish-vote-' + justVoted, '1'); } catch(e){}
+  if (justVoted && ids.indexOf(justVoted) !== -1) lsSet('brackish-vote-' + justVoted, '1');
+
+  function getVoteCount(){
+    var n = 0;
+    ids.forEach(function(id){ if (lsGet('brackish-vote-' + id) === '1') n++; });
+    return n;
   }
-  ids.forEach(function(id){
-    var voted = false;
-    try { voted = localStorage.getItem('brackish-vote-' + id) === '1'; } catch(e){}
-    if (!voted) return;
+
+  function markVotedStatic(id){
     var box = document.getElementById(id);
     if (!box) return;
     var form = box.querySelector('form');
@@ -648,7 +656,130 @@
     form.replaceWith(done);
     var head = box.querySelector('.m-status');
     if (head) head.textContent = 'YOU VOTED';
+  }
+  ids.forEach(markVotedStatic);
+
+  function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+
+  /* ---- newsletter modal ---- */
+  var modalHtml =
+    '<div class="news-modal" id="newsModal" role="dialog" aria-modal="true" aria-label="Newsletter signup">' +
+      '<div class="news-modal-card">' +
+        '<button class="news-modal-close" id="newsModalClose" aria-label="Close">&times;</button>' +
+        '<div id="newsModalBody">' +
+          '<p class="kicker">YOU&rsquo;RE 2 FOR 8</p>' +
+          '<h3>Want the results in your inbox?</h3>' +
+          '<p>Round 1 winners, the Round of 16 bracket, and the 757&rsquo;s essential briefing — Sun, Tue, Fri. Free forever, unsubscribe anytime.</p>' +
+          '<form id="newsModalForm" name="newsletter" method="POST">' +
+            '<input type="hidden" name="form-name" value="newsletter">' +
+            '<p style="display:none"><input name="bot-field" tabindex="-1" autocomplete="off"></p>' +
+            '<input type="email" name="email" placeholder="Your email address" required aria-label="Email address">' +
+            '<button class="btn btn-solid" type="submit" id="newsModalBtn">SIGN ME UP &rarr;</button>' +
+          '</form>' +
+        '</div>' +
+        '<div class="news-modal-success" id="newsModalSuccess">' +
+          '<h3>You&rsquo;re in. &#127942;</h3>' +
+          '<p>Watch your inbox — results drop when Round 1 closes.</p>' +
+        '</div>' +
+        '<button class="dismiss" id="newsModalDismiss">No thanks, just here for the bracket</button>' +
+      '</div>' +
+    '</div>';
+  document.body.insertAdjacentHTML('beforeend', modalHtml);
+  var modal = document.getElementById('newsModal');
+  function closeModal(){ modal.classList.remove('open'); }
+  document.getElementById('newsModalClose').addEventListener('click', closeModal);
+  document.getElementById('newsModalDismiss').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+
+  document.getElementById('newsModalForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target, btn = document.getElementById('newsModalBtn');
+    btn.disabled = true; btn.textContent = 'SIGNING UP…';
+    var data = new URLSearchParams(new FormData(f)).toString();
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data})
+      .then(function(r){ if(!r.ok) throw new Error('net'); return r.text(); })
+      .then(function(){
+        lsSet('brackish-newsletter-subbed', '1');
+        document.getElementById('newsModalBody').style.display = 'none';
+        document.getElementById('newsModalDismiss').style.display = 'none';
+        document.getElementById('newsModalSuccess').style.display = 'block';
+        setTimeout(closeModal, 2600);
+      })
+      .catch(function(){
+        btn.disabled = false; btn.innerHTML = 'SIGN ME UP &rarr;';
+        alert("Hmm, that didn't go through — check your connection and try again.");
+      });
   });
+
+  function maybeAskNewsletter(){
+    if (lsGet('brackish-newsletter-asked') === '1' || lsGet('brackish-newsletter-subbed') === '1') return;
+    if (getVoteCount() >= 2) {
+      lsSet('brackish-newsletter-asked', '1');
+      setTimeout(function(){ modal.classList.add('open'); }, 1800);
+    }
+  }
+  function openNewsletterNow(){
+    lsSet('brackish-newsletter-asked', '1');
+    modal.classList.add('open');
+  }
+
+  /* ---- AJAX voting with chaining ---- */
+  function onVoteSuccess(id, idx, name){
+    lsSet('brackish-vote-' + id, '1');
+    var box = document.getElementById(id);
+    var form = box.querySelector('form');
+    var head = box.querySelector('.m-status');
+    if (head) head.textContent = 'YOU VOTED';
+    var nextId = ids[idx + 1];
+    var conf = document.createElement('div');
+    conf.className = 'vote-confirm';
+    if (nextId) {
+      conf.innerHTML = '<span class="check">✅</span><h3>Vote for ' + esc(name) + ' counted.</h3>' +
+        '<p>One down — keep the streak going.</p>' +
+        '<button class="btn-next" type="button">NEXT MATCHUP &rarr;</button>';
+    } else {
+      conf.innerHTML = '<span class="check">🏆</span><h3>You voted all 8 matchups.</h3>' +
+        '<p>Legend behavior. Get the results the second Round 1 closes:</p>' +
+        '<button class="btn-next" type="button" id="finalNewsBtn">GET THE RESULTS &rarr;</button>';
+    }
+    form.replaceWith(conf);
+    var advance = function(){
+      if (nextId) {
+        var t = document.getElementById(nextId);
+        if (t) t.scrollIntoView({behavior:'smooth', block:'start'});
+      } else {
+        openNewsletterNow();
+      }
+    };
+    var btn = conf.querySelector('.btn-next');
+    if (btn) btn.addEventListener('click', advance);
+    setTimeout(advance, nextId ? 2400 : 3000);
+    maybeAskNewsletter();
+  }
+
+  ids.forEach(function(id, idx){
+    var box = document.getElementById(id);
+    if (!box) return;
+    var form = box.querySelector('form');
+    if (!form) return; // already voted (static state)
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var checked = form.querySelector('input[name="vote"]:checked');
+      if (!checked) return;
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.textContent = 'COUNTING…'; }
+      var data = new URLSearchParams(new FormData(form)).toString();
+      fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data})
+        .then(function(r){ if(!r.ok) throw new Error('net'); return r.text(); })
+        .then(function(){ onVoteSuccess(id, idx, checked.value); })
+        .catch(function(){
+          if (btn) { btn.disabled = false; btn.innerHTML = 'CAST VOTE &rarr;'; }
+          alert("Hmm, that vote didn't go through — check your connection and try again.");
+        });
+    });
+  });
+
   // Bio links inside vote labels: navigate without selecting the radio
   document.querySelectorAll('.vote-option a.view-profile').forEach(function(a){
     a.addEventListener('click', function(e){
