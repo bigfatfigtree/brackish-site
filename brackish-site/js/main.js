@@ -39,6 +39,11 @@
   var results = document.getElementById('searchResults');
   var index = [
     {t:'The 757\u2019s Most Famous Face: Vote in Round 1', u:'/faceoff.html', c:'Faceoff'},
+    {t:'The HRBT Eastbound Closes Friday Night. Plan Like It.', u:'/news/hrbt-closure.html', c:'Traffic'},
+    {t:'Brackish On Stage: The Loudest Weekend of the Fall', u:'/music/on-stage-oct16.html', c:'Music'},
+    {t:'Town Point Wine Fest: 200 Wines, Two Days, Zero Excuses', u:'/food/wine-fest.html', c:'Food + Drink'},
+    {t:'Haynes Furniture Is Gone After 128 Years. The Take.', u:'/news/haynes-closing.html', c:'Opinion'},
+    {t:'Norfolk State Just Won Back-to-Back for the First Time Since 2021', u:'/sports/nsu-win.html', c:'Sports'},
     {t:'AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight', u:'/music/afi-norva.html', c:'Music'},
     {t:'Movements on Halloween: The Only Correct Plan for Oct 31', u:'/music/halloween-movements.html', c:'Music'},
     {t:'Earl Sweatshirt, Oct 27: The Lyricist\u2019s Lyricist Hits the NorVa', u:'/music/earl-sweatshirt.html', c:'Music'},

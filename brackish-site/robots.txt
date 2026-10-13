@@ -3,3 +3,4 @@ Allow: /
 Disallow: /hidden_files/
 
 Sitemap: https://brackishmag.com/sitemap.xml
+Sitemap: https://brackishmag.com/news-sitemap.xml
