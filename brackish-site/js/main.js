@@ -39,6 +39,7 @@
   var results = document.getElementById('searchResults');
   var index = [
     {t:'The 757\u2019s Most Famous Face: Vote in Round 1', u:'/faceoff.html', c:'Faceoff'},
+    {t:'Matchbox Twenty\u2019s 30th Anniversary Tour Hits Virginia Beach July 3 \u2014 With the Wallflowers', u:'/music/matchbox-twenty-2027.html', c:'Music'},
     {t:'Friday Night Lights: Six of the State\u2019s Top Ten Are From the 757', u:'/sports/hs-football-week8.html', c:'Sports'},
     {t:'The HRBT Eastbound Closes Friday Night. Plan Like It.', u:'/news/hrbt-closure.html', c:'Traffic'},
     {t:'Brackish On Stage: The Loudest Weekend of the Fall', u:'/music/on-stage-oct16.html', c:'Music'},
