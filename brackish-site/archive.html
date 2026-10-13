@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stories — Brackish | Hampton Roads</title>
+<meta name="description" content="Every Brackish story, issue and guide. Filter by category.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111110'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' fill='%23F5F0E3' text-anchor='middle'%3Eb%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Brackish home"><img src="assets/logo.jpg" alt="Brackish"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="archive.html">STORIES</a>
+      <a href="archive.html?cat=places">PLACES</a>
+      <a href="spotlight.html">PEOPLE</a>
+      <a href="archive.html?cat=culture">CULTURE</a>
+      <a href="archive.html?cat=guides">GUIDES</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-open aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose" aria-label="Close search">&times;</button>
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="Search Brackish…" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<section class="section" style="padding-top:64px">
+  <div class="wrap">
+    <p class="eyebrow">The Archive</p>
+    <h1 class="section-title">Every story, issue &amp; guide.</h1>
+    <p class="section-lede">Newsletter editions, interviews, guides and features — filter by what you're in the mood for.</p>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="stories">STORIES</button>
+      <button class="filter-btn" data-filter="places">PLACES</button>
+      <button class="filter-btn" data-filter="food">FOOD + DRINK</button>
+      <button class="filter-btn" data-filter="music">MUSIC</button>
+      <button class="filter-btn" data-filter="outdoors">OUTDOORS</button>
+      <button class="filter-btn" data-filter="guides">GUIDES</button>
+      <button class="filter-btn" data-filter="people">PEOPLE</button>
+      <button class="filter-btn" data-filter="culture">CULTURE</button>
+    </div>
+
+    <div class="archive-list">
+      <a class="archive-item" data-cat="stories" href="issues/2026-10-13.html">
+        <img src="assets/hero-marsh.webp" alt="">
+        <div><p class="meta">FLAGSHIP ISSUE · OCT 13, 2026</p><h3>The 757 in 4 Minutes</h3></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="archive-item" data-cat="music" href="issues/2026-10-16.html">
+        <img src="assets/hero-marsh.webp" style="object-position:center 20%" alt="">
+        <div><p class="meta">ON STAGE · OCT 16, 2026</p><h3>Brackish On Stage: AFI Tonight, Earl Sweatshirt Soon</h3></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="archive-item" data-cat="food guides" href="guides/waterfront.html">
+        <img src="assets/card-waterfront.webp" alt="">
+        <div><p class="meta">GUIDE · FOOD + DRINK</p><h3>The Best Waterfront Spots (That Locals Actually Go To)</h3></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="archive-item" data-cat="people" href="spotlight.html">
+        <img src="assets/hero-marsh.webp" style="object-position:center 70%" alt="">
+        <div><p class="meta">SPOTLIGHT · PEOPLE</p><h3>The Next Wave: Hampton Roads Change-Makers</h3></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="archive-item" data-cat="culture places" href="stories/murals.html">
+        <img src="assets/card-mural.webp" alt="">
+        <div><p class="meta">CULTURE · PLACES</p><h3>A More Colorful Coast: The 757's Mural Movement</h3></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="archive-item" data-cat="outdoors places" href="archive.html">
+        <img src="assets/about-coast.webp" alt="">
+        <div><p class="meta">GUIDE · OUTDOORS · COMING SOON</p><h3>Paddle the Backwaters: 5 Launches Within 30 Minutes</h3></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="Brackish">
+        <p>The 757's essential briefing. Twice a week — sharp, local, and actually useful.</p>
+      </div>
+      <div class="footer-col">
+        <h4>READ</h4>
+        <a href="archive.html">Latest stories</a>
+        <a href="archive.html?cat=guides">Guides</a>
+        <a href="spotlight.html">Spotlight interviews</a>
+      </div>
+      <div class="footer-col">
+        <h4>BRACKISH</h4>
+        <a href="about.html">Our story</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="submit.html">Get the Spotlight</a>
+      </div>
+      <div class="footer-col">
+        <h4>FOLLOW</h4>
+        <a href="https://instagram.com/readbrackish" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@readbrackish" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://x.com/readbrackish" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span id="year">2026</span> Brackish. Hampton Roads, Virginia.</p>
+      <p>AI-assisted · Human-edited · Sources cited · Opinions labeled</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
