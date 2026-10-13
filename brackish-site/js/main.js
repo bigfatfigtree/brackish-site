@@ -84,24 +84,32 @@
   if (input) input.addEventListener('input', function(){ doSearch(input.value); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && overlay) overlay.classList.remove('open'); });
 
-  // Archive category filter (?cat= / buttons)
+  // Archive category + region filter (?cat= / ?region= / buttons)
   var items = document.querySelectorAll('#archiveGrid [data-cat]');
   var btns = document.querySelectorAll('#filterBar button');
+  var rbtns = document.querySelectorAll('#regionBar button');
   var count = document.getElementById('resultCount');
-  function setFilter(cat){
+  var curCat = 'all', curRegion = 'all';
+  function setFilter(cat, region){
+    curCat = cat; curRegion = region;
     var shown = 0;
     items.forEach(function(it){
-      var hide = cat !== 'all' && it.getAttribute('data-cat').split(' ').indexOf(cat) === -1;
+      var hideCat = cat !== 'all' && it.getAttribute('data-cat').split(' ').indexOf(cat) === -1;
+      var rgs = (it.getAttribute('data-region') || '').split(' ');
+      var hideReg = region !== 'all' && rgs.indexOf(region) === -1;
+      var hide = hideCat || hideReg;
       it.classList.toggle('hidden', hide);
       if (!hide) shown++;
     });
     btns.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-filter') === cat); });
+    rbtns.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-region') === region); });
     if (count) count.textContent = shown + (shown === 1 ? ' story' : ' stories');
   }
-  btns.forEach(function(b){ b.addEventListener('click', function(){ setFilter(b.getAttribute('data-filter')); }); });
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setFilter(b.getAttribute('data-filter'), curRegion); }); });
+  rbtns.forEach(function(b){ b.addEventListener('click', function(){ setFilter(curCat, b.getAttribute('data-region')); }); });
   if (items.length) {
     var params = new URLSearchParams(window.location.search);
-    setFilter(params.get('cat') || 'all');
+    setFilter(params.get('cat') || 'all', params.get('region') || 'all');
   }
 })();
 

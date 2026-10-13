@@ -503,3 +503,7 @@ span.profile-photo.monogram{display:flex;align-items:center;justify-content:cent
   .show-row{grid-template-columns:80px 1fr}
   .show-row .btn{display:none}
 }
+
+.footer-regions a{display:block;margin-bottom:10px}
+.footer-regions a span{display:block;font-size:11px;color:#8a8578;font-weight:400;margin-top:2px}
+.region-bar .region-label{font-size:11px;letter-spacing:.15em;color:#8a8578;font-weight:700;margin-right:8px;align-self:center}

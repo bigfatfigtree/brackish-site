@@ -99,142 +99,151 @@
     <button data-filter="fun">FUN</button>
     <button data-filter="issues">ISSUES</button>
   </div>
+  <div class="filter-bar region-bar" id="regionBar" style="margin-top:12px">
+    <span class="region-label">REGION:</span>
+    <button data-region="all" class="active">ALL</button>
+    <button data-region="southside">SOUTHSIDE</button>
+    <button data-region="peninsula">PENINSULA</button>
+    <button data-region="eastern-shore">EASTERN SHORE</button>
+    <button data-region="western-tidewater">WESTERN TIDEWATER</button>
+    <button data-region="nenc">NE NORTH CAROLINA</button>
+  </div>
 
   <div class="grid-2" id="archiveGrid">
-    <article class="card" data-cat="music">
+    <article class="card" data-cat="music" data-region="southside">
       <a class="card-img" href="music/matchbox-twenty-2027.html"><img src="assets/story-matchbox.jpg" alt="Amphitheater concert at sunset"></a>
       <p class="card-cat">MUSIC · OCT 13</p>
       <h3><a href="music/matchbox-twenty-2027.html">Matchbox Twenty's 30th Anniversary Tour Hits Virginia Beach July 3 — With the Wallflowers</a></h3>
       <div class="card-rule"></div>
       <p>30th anniversary tour, July 3 2027 at the amp, with The Wallflowers.</p>
     </article>
-    <article class="card" data-cat="sports">
+    <article class="card" data-cat="sports" data-region="southside peninsula">
       <a class="card-img" href="sports/hs-football-week8.html"><img src="assets/story-hsfootball.jpg" alt="High school stadium under Friday night lights"></a>
       <p class="card-cat">SPORTS · OCT 13</p>
       <h3><a href="sports/hs-football-week8.html">Friday Night Lights: Six of the State's Top Ten Are From the 757</a></h3>
       <div class="card-rule"></div>
       <p>Maury #1, King's Fork #2, Indian River #3. Last week's blowouts and this Friday's games.</p>
     </article>
-    <article class="card" data-cat="news">
+    <article class="card" data-cat="news" data-region="southside peninsula">
       <a class="card-img" href="news/hrbt-closure.html"><img src="assets/story-hrbt.jpg" alt="Tunnel entrance at dusk with brake lights"></a>
       <p class="card-cat">NEWS · OCT 13</p>
       <h3><a href="news/hrbt-closure.html">The HRBT Eastbound Closes Friday Night. Plan Like It.</a></h3>
       <div class="card-rule"></div>
       <p>Full eastbound closure Fri 9pm–Mon 5am. Detour via the MMMBT.</p>
     </article>
-    <article class="card" data-cat="music">
+    <article class="card" data-cat="music" data-region="southside peninsula">
       <a class="card-img" href="music/on-stage-oct16.html"><img src="assets/story-onstage.jpg" alt="Guitarist mid-jump on a packed stage"></a>
       <p class="card-cat">MUSIC · OCT 13</p>
       <h3><a href="music/on-stage-oct16.html">Brackish On Stage: The Loudest Weekend of the Fall</a></h3>
       <div class="card-rule"></div>
       <p>Story So Far, 5FDP, Hornsby, Trombone Shorty, The Residents.</p>
     </article>
-    <article class="card" data-cat="food">
+    <article class="card" data-cat="food" data-region="southside">
       <a class="card-img" href="food/wine-fest.html"><img src="assets/story-winefest.jpg" alt="Wine festival tents on a sunny waterfront"></a>
       <p class="card-cat">FOOD & DRINK · OCT 13</p>
       <h3><a href="food/wine-fest.html">Town Point Wine Fest: 200 Wines, Two Days, Zero Excuses</a></h3>
       <div class="card-rule"></div>
       <p>25+ Virginia wineries, 200+ wines, Sat–Sun on the Norfolk waterfront.</p>
     </article>
-    <article class="card" data-cat="news">
+    <article class="card" data-cat="news" data-region="southside">
       <a class="card-img" href="news/haynes-closing.html"><img src="assets/story-haynes.jpg" alt="Furniture store showroom interior"></a>
       <p class="card-cat">THE TAKE · OCT 13</p>
       <h3><a href="news/haynes-closing.html">Haynes Furniture Is Gone After 128 Years. The Take.</a></h3>
       <div class="card-rule"></div>
       <p>128 years, four generations, 40–80% off. What the 757 loses.</p>
     </article>
-    <article class="card" data-cat="sports">
+    <article class="card" data-cat="sports" data-region="southside">
       <a class="card-img" href="sports/nsu-win.html"><img src="assets/story-nsu.jpg" alt="Running back breaking away down the sideline"></a>
       <p class="card-cat">SPORTS · OCT 13</p>
       <h3><a href="sports/nsu-win.html">Norfolk State Just Won Back-to-Back for the First Time Since 2021</a></h3>
       <div class="card-rule"></div>
       <p>Vick's first road win, a 95-yard school-record TD run.</p>
     </article>
-    <article class="card" data-cat="culture">
+    <article class="card" data-cat="culture" data-region="southside peninsula eastern-shore western-tidewater nenc">
       <a class="card-img" href="faceoff.html"><img src="assets/logo-b-icon.png" alt="Brackish Faceoff"></a>
       <p class="card-cat">BRACKISH FACEOFF · ROUND 1 OPEN</p>
       <h3><a href="faceoff.html">The 757's Most Famous Face: Vote in Round 1</a></h3>
       <p>24 legends, 8 play-in battles. Read every contender's bio, then cast your vote.</p>
     </article>
-    <article class="card" data-cat="music">
+    <article class="card" data-cat="music" data-region="southside">
       <a class="card-img" href="music/afi-norva.html"><img src="assets/story-concert.webp" alt="Concert crowd"></a>
       <p class="card-cat">MUSIC · OCT 13</p>
       <h3><a href="music/afi-norva.html">AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight</a></h3>
     </article>
-    <article class="card" data-cat="culture">
+    <article class="card" data-cat="culture" data-region="southside">
       <a class="card-img" href="culture/heart-sellers.html"><img src="assets/story-theater.webp" alt="Theater stage"></a>
       <p class="card-cat">CULTURE · OCT 13</p>
       <h3><a href="culture/heart-sellers.html">"The Heart Sellers": The Warmest Thing on a Local Stage</a></h3>
     </article>
-    <article class="card" data-cat="news">
+    <article class="card" data-cat="news" data-region="southside peninsula eastern-shore western-tidewater nenc">
       <p class="card-cat">NEWS · OCT 13</p>
       <h3><a href="news/voting.html">Early Voting Is Open. The Lines Are Not.</a></h3>
       <div class="card-rule"></div>
       <p>Ten minutes on a weekday morning beats an hour in November. Your no-excuses briefing.</p>
     </article>
-    <article class="card" data-cat="news">
+    <article class="card" data-cat="news" data-region="southside">
       <p class="card-cat">THE TAKE · OPINION · OCT 13</p>
       <h3><a href="news/night-shift.html">The 757 Doesn't Need Another Smash Burger. It Needs Later Hours.</a></h3>
       <div class="card-rule"></div>
       <p>This is a military town full of people who work nights, and half our best kitchens close at 9.</p>
     </article>
-    <article class="card" data-cat="music">
+    <article class="card" data-cat="music" data-region="southside">
       <p class="card-cat">MUSIC · OCT 13</p>
       <h3><a href="music/halloween-movements.html">Movements on Halloween: The Only Correct Plan for Oct 31</a></h3>
       <div class="card-rule"></div>
       <p>A thousand costumed people screaming in a vaudeville theater. Costume mandatory in spirit.</p>
     </article>
-    <article class="card" data-cat="music">
+    <article class="card" data-cat="music" data-region="southside">
       <p class="card-cat">MUSIC · OCT 13</p>
       <h3><a href="music/earl-sweatshirt.html">Earl Sweatshirt, Oct 27: The Lyricist's Lyricist Hits the NorVa</a></h3>
       <div class="card-rule"></div>
       <p>Dense, insular, unmissable — the rap show of the fall.</p>
     </article>
-    <article class="card" data-cat="culture">
+    <article class="card" data-cat="culture" data-region="southside">
       <p class="card-cat">NIGHTLIFE · OCT 13</p>
       <h3><a href="entertainment/burlesque.html">"Champagne &amp; Sin": Norfolk's Burlesque Night Is Not Kidding Around</a></h3>
       <div class="card-rule"></div>
       <p>Burlesque plus live music at 37th and Zen, Saturday 8pm.</p>
     </article>
-    <article class="card" data-cat="news">
+    <article class="card" data-cat="news" data-region="southside peninsula">
       <a class="card-img" href="events/weekend-radar.html"><img src="assets/story-brunch.webp" alt="Brunch spread"></a>
       <p class="card-cat">EVENTS · OCT 13</p>
       <h3><a href="events/weekend-radar.html">The Weekend Radar: Oct 16–18</a></h3>
     </article>
-    <article class="card" data-cat="outdoors">
+    <article class="card" data-cat="outdoors" data-region="southside">
       <a class="card-img" href="outdoors/harrison-lawn.html"><img src="assets/hero-marsh.webp" alt="Marsh at sunset"></a>
       <p class="card-cat">OUTDOORS · OCT 13</p>
       <h3><a href="outdoors/harrison-lawn.html">The Best Free Seat in Norfolk: The Harrison Opera House Lawn</a></h3>
     </article>
-    <article class="card" data-cat="fun">
+    <article class="card" data-cat="fun" data-region="southside peninsula">
       <p class="card-cat">MARKETPLACE GOLD · OCT 13</p>
       <h3><a href="fun/marketplace-gold.html">The $200 Chesapeake Time Machine</a></h3>
       <div class="card-rule"></div>
       <p>A "vintage" console TV, "works great." The cabinet slaps, though.</p>
     </article>
-    <article class="card" data-cat="people">
+    <article class="card" data-cat="people" data-region="southside">
       <p class="card-cat">SPOTLIGHT · OCT 13</p>
       <h3><a href="spotlight.html">The Brackish Spotlight: Five Questions with the Founder</a></h3>
       <div class="card-rule"></div>
       <p>Our inaugural interview: why Brackish exists, and what's next.</p>
     </article>
-    <article class="card" data-cat="food guides">
+    <article class="card" data-cat="food guides" data-region="southside western-tidewater">
       <a class="card-img" href="guides/waterfront.html"><img src="assets/card-waterfront.webp" alt="Waterfront deck"></a>
       <p class="card-cat">GUIDE · OCT 12</p>
       <h3><a href="guides/waterfront.html">The Best Waterfront Spots (That Locals Actually Go To)</a></h3>
     </article>
-    <article class="card" data-cat="culture">
+    <article class="card" data-cat="culture" data-region="southside">
       <a class="card-img" href="stories/murals.html"><img src="assets/card-mural.webp" alt="Mural"></a>
       <p class="card-cat">ART · OCT 12</p>
       <h3><a href="stories/murals.html">A More Colorful Coast: The 757's Mural Movement</a></h3>
     </article>
-    <article class="card" data-cat="issues">
+    <article class="card" data-cat="issues" data-region="southside peninsula eastern-shore western-tidewater nenc">
       <p class="card-cat">ISSUE · OCT 16</p>
       <h3><a href="issues/2026-10-16.html">Brackish On Stage: The NorVa's October Run</a></h3>
       <div class="card-rule"></div>
       <p>AFI, All Them Witches, Bethel Music, Earl Sweatshirt — the Friday music edition.</p>
     </article>
-    <article class="card" data-cat="issues">
+    <article class="card" data-cat="issues" data-region="southside peninsula eastern-shore western-tidewater nenc">
       <p class="card-cat">ISSUE · OCT 13</p>
       <h3><a href="issues/2026-10-13.html">The Tuesday Briefing: Launch Edition</a></h3>
       <div class="card-rule"></div>
@@ -261,6 +270,14 @@
         <a href="about.html">Our story</a>
         <a href="advertise.html">Advertise</a>
         <a href="submit.html">Get the Spotlight</a>
+      </div>
+      <div class="footer-col footer-regions">
+        <h4>WHERE WE COVER</h4>
+        <a href="archive.html?region=southside">Southside<span>Virginia Beach · Norfolk · Chesapeake · Suffolk · Portsmouth</span></a>
+        <a href="archive.html?region=peninsula">Peninsula<span>Hampton · Newport News · Williamsburg · York County · Poquoson · Gloucester</span></a>
+        <a href="archive.html?region=eastern-shore">Eastern Shore<span>Accomack &amp; Northampton counties</span></a>
+        <a href="archive.html?region=western-tidewater">Western Tidewater<span>Smithfield · Isle of Wight · Sussex · Franklin</span></a>
+        <a href="archive.html?region=nenc">NE North Carolina<span>Elizabeth City · Outer Banks · Moyock · Currituck</span></a>
       </div>
       <div class="footer-col">
         <h4>FOLLOW</h4>
