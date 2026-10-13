@@ -6,7 +6,7 @@ Static site for **Brackish: Hampton Roads**. No build step, no framework, no dat
 
 1. Go to [app.netlify.com/drop](https://app.netlify.com/drop).
 2. Drag the entire `brackish-site` folder into the browser.
-3. Done — you get a live URL instantly. Add your custom domain (`readbrackish.com`) under Site settings → Domain management.
+3. Done — you get a live URL instantly. Add your custom domain (`brackishmag.com`) under Site settings → Domain management.
 
 ## Automatic deploys (recommended — this is what makes content hands-off)
 

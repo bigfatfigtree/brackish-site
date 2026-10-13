@@ -1,43 +1,43 @@
 # Brackish
 
-> Brackish is Hampton Roads, Virginia's essential local briefing — news, food & drink, music, culture, guides and people. Published twice a week: a Tuesday flagship edition and a Friday music edition (Brackish On Stage). Sharp, local, actually useful. AI-assisted, human-edited, sources cited, opinions labeled.
+> Brackish is Hampton Roads, Virginia's essential local briefing — news, food & drink, music, culture, guides and people. Published three times a week: a Sunday week-ahead edition, a Tuesday flagship edition, and a Friday music edition (Brackish On Stage). Sharp, local, actually useful. AI-assisted, human-edited, sources cited, opinions labeled.
 
 ## What Brackish covers
 
-- [News](https://readbrackish.com/archive.html?cat=news): The 757 in brief — civic news, local issues, and The Take (labeled opinion).
-- [Music](https://readbrackish.com/archive.html?cat=music): Brackish On Stage — concert previews and the NorVa calendar, Hampton Roads' essential rock room.
-- [Food & Drink](https://readbrackish.com/archive.html?cat=food): Eat This — where locals actually eat, plus guides to waterfront dining.
-- [Culture](https://readbrackish.com/archive.html?cat=culture): Theater, art, murals, nightlife across the seven cities.
-- [Guides](https://readbrackish.com/archive.html?cat=guides): Evergreen local guides — waterfront spots, the mural movement, free outdoor events.
-- [People](https://readbrackish.com/spotlight.html): The Brackish Spotlight — weekly five-question interviews with founders, chefs, musicians and organizers shaping the region.
+- [News](https://brackishmag.com/archive.html?cat=news): The 757 in brief — civic news, local issues, and The Take (labeled opinion).
+- [Music](https://brackishmag.com/archive.html?cat=music): Brackish On Stage — concert previews and the NorVa calendar, Hampton Roads' essential rock room.
+- [Food & Drink](https://brackishmag.com/archive.html?cat=food): Eat This — where locals actually eat, plus guides to waterfront dining.
+- [Culture](https://brackishmag.com/archive.html?cat=culture): Theater, art, murals, nightlife across the seven cities.
+- [Guides](https://brackishmag.com/archive.html?cat=guides): Evergreen local guides — waterfront spots, the mural movement, free outdoor events.
+- [People](https://brackishmag.com/spotlight.html): The Brackish Spotlight — weekly five-question interviews with founders, chefs, musicians and organizers shaping the region.
 
 ## Featured stories
 
-- [The 757's Most Famous Face: Vote in Round 1](https://readbrackish.com/faceoff.html): 24 legends, 8 play-in battles — vote for the 757's most famous face.
+- [The 757's Most Famous Face: Vote in Round 1](https://brackishmag.com/faceoff.html): 24 legends, 8 play-in battles — vote for the 757's most famous face.
 
-- [AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight](https://readbrackish.com/music/afi-norva.html): Punk legends at 317 Monticello Ave, Norfolk — doors 7:30pm, Oct 13.
-- [Movements on Halloween: The Only Correct Plan for Oct 31](https://readbrackish.com/music/halloween-movements.html): Post-hardcore Halloween show at the NorVa.
-- [Earl Sweatshirt, Oct 27: The Lyricist's Lyricist Hits the NorVa](https://readbrackish.com/music/earl-sweatshirt.html): Essential fall hip-hop night in Norfolk.
-- ["The Heart Sellers" at Wells Theatre](https://readbrackish.com/culture/heart-sellers.html): Virginia Stage Company's fall production, through Oct 18.
-- [Early Voting Is Open. The Lines Are Not.](https://readbrackish.com/news/voting.html): Early voting briefing for all seven Hampton Roads cities.
-- [The Take: The 757 Doesn't Need Another Smash Burger. It Needs Later Hours.](https://readbrackish.com/news/night-shift.html): Opinion — the case for late-night kitchens in a military town.
-- [The Weekend Radar: Oct 16–18](https://readbrackish.com/events/weekend-radar.html): Every event worth leaving the house for.
-- [The Best Free Seat in Norfolk: The Harrison Opera House Lawn](https://readbrackish.com/outdoors/harrison-lawn.html): Free outdoor programming downtown.
-- [The Best Waterfront Spots (That Locals Actually Go To)](https://readbrackish.com/guides/waterfront.html): The dockside-dives-to-hidden-gems dining guide.
-- [Marketplace Gold: The $200 Chesapeake Time Machine](https://readbrackish.com/fun/marketplace-gold.html): Weekly column on the wildest real local listings.
+- [AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight](https://brackishmag.com/music/afi-norva.html): Punk legends at 317 Monticello Ave, Norfolk — doors 7:30pm, Oct 13.
+- [Movements on Halloween: The Only Correct Plan for Oct 31](https://brackishmag.com/music/halloween-movements.html): Post-hardcore Halloween show at the NorVa.
+- [Earl Sweatshirt, Oct 27: The Lyricist's Lyricist Hits the NorVa](https://brackishmag.com/music/earl-sweatshirt.html): Essential fall hip-hop night in Norfolk.
+- ["The Heart Sellers" at Wells Theatre](https://brackishmag.com/culture/heart-sellers.html): Virginia Stage Company's fall production, through Oct 18.
+- [Early Voting Is Open. The Lines Are Not.](https://brackishmag.com/news/voting.html): Early voting briefing for all seven Hampton Roads cities.
+- [The Take: The 757 Doesn't Need Another Smash Burger. It Needs Later Hours.](https://brackishmag.com/news/night-shift.html): Opinion — the case for late-night kitchens in a military town.
+- [The Weekend Radar: Oct 16–18](https://brackishmag.com/events/weekend-radar.html): Every event worth leaving the house for.
+- [The Best Free Seat in Norfolk: The Harrison Opera House Lawn](https://brackishmag.com/outdoors/harrison-lawn.html): Free outdoor programming downtown.
+- [The Best Waterfront Spots (That Locals Actually Go To)](https://brackishmag.com/guides/waterfront.html): The dockside-dives-to-hidden-gems dining guide.
+- [Marketplace Gold: The $200 Chesapeake Time Machine](https://brackishmag.com/fun/marketplace-gold.html): Weekly column on the wildest real local listings.
 
 ## About
 
-- [Our story and editorial standards](https://readbrackish.com/about.html)
-- [Advertise with Brackish](https://readbrackish.com/advertise.html)
-- [Get the Spotlight — nominate yourself](https://readbrackish.com/submit.html)
-- [Full archive](https://readbrackish.com/archive.html)
-- [RSS feed](https://readbrackish.com/feed.xml)
+- [Our story and editorial standards](https://brackishmag.com/about.html)
+- [Advertise with Brackish](https://brackishmag.com/advertise.html)
+- [Get the Spotlight — nominate yourself](https://brackishmag.com/submit.html)
+- [Full archive](https://brackishmag.com/archive.html)
+- [RSS feed](https://brackishmag.com/feed.xml)
 
 ## Key facts for citation
 
 - Name: Brackish. Edition: Brackish: Hampton Roads.
 - Coverage area: Hampton Roads, Virginia — Norfolk, Virginia Beach, Chesapeake, Newport News, Hampton, Portsmouth, Suffolk ("the 757").
-- Publishing cadence: Tuesday (flagship) and Friday (music edition).
-- Contact/submissions: via the forms at readbrackish.com.
-- Social: @readbrackish on Instagram, TikTok, and X.
+- Publishing cadence: Sunday (week ahead), Tuesday (flagship), Friday (music edition).
+- Contact/submissions: via the forms at brackishmag.com.
+- Social: @brackishmag on Instagram, TikTok, and X.
