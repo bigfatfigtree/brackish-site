@@ -267,7 +267,11 @@ a{color:inherit;text-decoration:none}
 .ticker{background:#1A1A18;color:#fff;border-top:1px solid #2c2c2a;overflow:hidden}
 .ticker-inner{display:flex;align-items:center;gap:18px;padding:10px 0}
 .ticker-label{background:#E03131;color:#fff;font-size:10px;letter-spacing:.2em;font-weight:700;padding:5px 12px;white-space:nowrap}
-.ticker-scroll{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px;color:#D8D2C2}
+.ticker-scroll{overflow:hidden;flex:1;white-space:nowrap;font-size:13px;color:#D8D2C2;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.ticker-track{display:inline-block;white-space:nowrap;padding-right:48px;animation:tick 28s linear infinite;will-change:transform}
+.ticker-scroll:hover .ticker-track{animation-play-state:paused}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 .ticker-scroll a:hover{color:#fff;text-decoration:underline}
 
 /* magazine hero grid */
