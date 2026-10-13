@@ -38,6 +38,7 @@
   var input = document.getElementById('searchInput');
   var results = document.getElementById('searchResults');
   var index = [
+    {t:'The 757\u2019s Most Famous Face: Vote in Round 1', u:'/faceoff.html', c:'Faceoff'},
     {t:'AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight', u:'/music/afi-norva.html', c:'Music'},
     {t:'Movements on Halloween: The Only Correct Plan for Oct 31', u:'/music/halloween-movements.html', c:'Music'},
     {t:'Earl Sweatshirt, Oct 27: The Lyricist\u2019s Lyricist Hits the NorVa', u:'/music/earl-sweatshirt.html', c:'Music'},

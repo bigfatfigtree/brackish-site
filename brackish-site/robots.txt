@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /hidden_files/
+
+Sitemap: https://readbrackish.com/sitemap.xml
