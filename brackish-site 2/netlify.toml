@@ -1,0 +1,29 @@
+# No build step — publish directory is the repo root.
+[build]
+  publish = "."
+
+# Pretty URLs: /about instead of /about.html
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/archive"
+  to = "/archive.html"
+  status = 200
+
+[[redirects]]
+  from = "/spotlight"
+  to = "/spotlight.html"
+  status = 200
+
+[[redirects]]
+  from = "/submit"
+  to = "/submit.html"
+  status = 200
+
+[[redirects]]
+  from = "/advertise"
+  to = "/advertise.html"
+  status = 200

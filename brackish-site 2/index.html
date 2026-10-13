@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brackish — Local Stories. A Wider Perspective. | Hampton Roads</title>
+<meta name="description" content="Brackish is Hampton Roads' essential briefing: news, food, music, culture and the people shaping the 757. Sharp, local, actually useful.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap topbar-inner"><span><span class="live-dot"></span><span class="js-date">HAMPTON ROADS</span></span><span>HAMPTON ROADS EDITION</span><a class="top-sub" href="#subscribe">SUBSCRIBE FREE</a></div></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Brackish home"><img src="assets/logo-wordmark-black.png" alt="Brackish — Local stories, a wider perspective"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="archive.html?cat=news">NEWS</a>
+      <a href="archive.html?cat=food">FOOD &amp; DRINK</a>
+      <a href="archive.html?cat=music">MUSIC</a>
+      <a href="archive.html?cat=culture">CULTURE</a>
+      <a href="archive.html?cat=guides">GUIDES</a>
+      <a href="spotlight.html">PEOPLE</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-open aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose" aria-label="Close search">&times;</button>
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="Search Brackish…" autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<div class="ticker">
+  <div class="wrap ticker-inner">
+    <span class="ticker-label">LATEST</span>
+    <span class="ticker-scroll"><a href="music/afi-norva.html">AFI tonight at the NorVa</a> &nbsp;·&nbsp; Early voting open across the seven cities &nbsp;·&nbsp; <a href="music/halloween-movements.html">Movements Halloween tickets moving fast</a> &nbsp;·&nbsp; <a href="events/weekend-radar.html">Weekend Radar: murder mystery, burlesque, Jersey Party</a></span>
+  </div>
+</div>
+
+<section class="mag-hero">
+  <article class="mag-lead">
+    <video autoplay muted loop playsinline poster="assets/story-concert.webp">
+      <source src="assets/music-concert-video.mp4" type="video/mp4">
+    </video>
+    <div class="mag-lead-copy">
+      <span class="kicker red">MUSIC · TONIGHT</span>
+      <h2><a href="music/afi-norva.html">AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight</a></h2>
+      <p class="dek">The punk legends, a 1,500-cap former vaudeville theater, and the singalong of the fall. Doors at 7:30.</p>
+      <p class="byline">BY THE BRACKISH DESK · 3 MIN READ</p>
+    </div>
+  </article>
+  <div class="mag-side">
+    <p class="mag-side-head">TOP STORIES</p>
+    <a class="mag-sec" href="culture/heart-sellers.html">
+      <img src="assets/story-theater.webp" alt="Theater stage in warm spotlight">
+      <div><span class="kicker gold">CULTURE</span><h3>"The Heart Sellers": The Warmest Thing on a Local Stage</h3></div>
+    </a>
+    <a class="mag-sec" href="news/voting.html">
+      <img src="assets/about-coast.webp" alt="Tidal coastline from above">
+      <div><span class="kicker teal">NEWS</span><h3>Early Voting Is Open. The Lines Are Not.</h3></div>
+    </a>
+    <a class="mag-sec" href="events/weekend-radar.html">
+      <img src="assets/story-brunch.webp" alt="Weekend brunch spread">
+      <div><span class="kicker gold">EVENTS</span><h3>The Weekend Radar: Murder Mystery, Burlesque, Jersey Party</h3></div>
+    </a>
+  </div>
+</section>
+
+<section class="wire">
+  <div class="wrap" style="padding-top:40px;padding-bottom:40px">
+    <p class="eyebrow">The Wire · Today</p>
+    <div class="wire-list">
+      <div class="wire-item"><span class="wire-time">7:30 PM</span><a href="music/afi-norva.html">AFI takes the NorVa tonight — doors open, curfew never</a></div>
+      <div class="wire-item"><span class="wire-time">6:00 PM</span><a href="culture/heart-sellers.html">"The Heart Sellers" enters its final week at Wells Theatre</a></div>
+      <div class="wire-item"><span class="wire-time">2:15 PM</span><a href="news/voting.html">Early voting is open; weekday mornings are gloriously empty</a></div>
+      <div class="wire-item"><span class="wire-time">11:40 AM</span><a href="news/night-shift.html">The Take: the 757 needs later hours, not more smash burgers</a></div>
+      <div class="wire-item"><span class="wire-time">9:05 AM</span><a href="music/earl-sweatshirt.html">Earl Sweatshirt announced for the NorVa, Oct 27</a></div>
+      <div class="wire-item"><span class="wire-time">8:00 AM</span><a href="fun/marketplace-gold.html">Marketplace Gold: the $200 Chesapeake time machine</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-front">
+  <div class="wrap">
+    <div class="sec-head"><h2>News</h2><a class="more" href="archive.html?cat=news">ALL NEWS &rarr;</a></div>
+    <div class="sec-grid">
+      <article class="card opinion-card" style="margin:0">
+        <span class="big-quote">&ldquo;</span>
+        <span class="kicker">THE TAKE · OPINION</span>
+        <h3><a href="news/night-shift.html" style="color:#fff">The 757 Doesn't Need Another Smash Burger. It Needs Later Hours.</a></h3>
+        <p>This is a military town full of people who work nights, and half our best kitchens close at 9. The city that feeds its night shift wins.</p>
+      </article>
+      <article class="card">
+        <a class="card-img" href="news/voting.html"><img src="assets/about-coast.webp" style="object-position:center 30%" alt="Coastline"></a>
+        <p class="card-cat">CIVIC</p>
+        <h3><a href="news/voting.html">Early Voting Is Open. The Lines Are Not.</a></h3>
+        <div class="card-rule"></div>
+        <p>Ten minutes on a weekday morning beats an hour in November. Your no-excuses briefing.</p>
+      </article>
+      <article class="card">
+        <a class="card-img" href="fun/marketplace-gold.html"><img src="assets/card-mural.webp" style="object-position:center 60%" alt="Colorful street art"></a>
+        <p class="card-cat">MARKETPLACE GOLD</p>
+        <h3><a href="fun/marketplace-gold.html">The $200 Chesapeake Time Machine</a></h3>
+        <div class="card-rule"></div>
+        <p>A "vintage" console TV, "works great," last functional during the Clinton administration. The cabinet slaps, though.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="music-band">
+  <video autoplay muted loop playsinline poster="assets/hero-marsh.webp">
+    <source src="assets/hero-marsh-video.mp4" type="video/mp4">
+  </video>
+  <div class="wrap music-band-inner">
+    <div class="sec-head"><h2>On Stage</h2><a class="more" href="archive.html?cat=music">ALL MUSIC &rarr;</a></div>
+    <div class="show-row">
+      <div class="show-date"><b>13</b><span>OCT · TUE</span></div>
+      <div><h3>AFI</h3><p>Punk royalty at the NorVa, 7:30pm. <a href="music/afi-norva.html" style="text-decoration:underline;color:#fff">Read the preview</a>.</p></div>
+      <a class="btn btn-light" href="music/afi-norva.html">PREVIEW &rarr;</a>
+    </div>
+    <div class="show-row">
+      <div class="show-date"><b>15</b><span>OCT · THU</span></div>
+      <div><h3>All Them Witches</h3><p>Heavy psych from Nashville. Earplugs and an open mind.</p></div>
+    </div>
+    <div class="show-row">
+      <div class="show-date"><b>16</b><span>OCT · FRI</span></div>
+      <div><h3>Bethel Music</h3><p>Worship night, massive singalong energy.</p></div>
+    </div>
+    <div class="show-row">
+      <div class="show-date"><b>20</b><span>OCT · TUE</span></div>
+      <div><h3>Alana Springsteen</h3><p>Country's sharpest new songwriter. Not related to Bruce (we checked).</p></div>
+    </div>
+    <div class="show-row">
+      <div class="show-date"><b>27</b><span>OCT · TUE</span></div>
+      <div><h3>Earl Sweatshirt</h3><p>The lyricist's lyricist. <a href="music/earl-sweatshirt.html" style="text-decoration:underline;color:#fff">Why you go</a>.</p></div>
+      <a class="btn btn-light" href="music/earl-sweatshirt.html">PREVIEW &rarr;</a>
+    </div>
+    <div class="show-row">
+      <div class="show-date"><b>31</b><span>OCT · SAT</span></div>
+      <div><h3>Movements — Halloween</h3><p>A thousand costumed people screaming in a vaudeville theater. <a href="music/halloween-movements.html" style="text-decoration:underline;color:#fff">The only correct plan</a>.</p></div>
+      <a class="btn btn-light" href="music/halloween-movements.html">PREVIEW &rarr;</a>
+    </div>
+    <div class="show-row" style="border:0">
+      <div class="show-date"><b>07</b><span>NOV · SAT</span></div>
+      <div><h3>Clutch</h3><p>Riff church. Then Madeon brings French electro-pop bliss on Nov 10.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-front">
+  <div class="wrap">
+    <div class="sec-head"><h2>Food &amp; Drink</h2><a class="more" href="archive.html?cat=food">ALL FOOD &rarr;</a></div>
+    <div class="sec-lead-row">
+      <article class="card big">
+        <a class="card-img" href="guides/waterfront.html"><img src="assets/card-waterfront.webp" alt="Waterfront restaurant deck at dusk"></a>
+        <p class="card-cat">GUIDE · FOOD + DRINK</p>
+        <h3><a href="guides/waterfront.html">The Best Waterfront Spots (That Locals Actually Go To)</a></h3>
+        <div class="card-rule"></div>
+        <p>From dockside dives to hidden gems — where the region really eats, drinks and hangs. No tourist traps survived this list.</p>
+      </article>
+      <article class="card">
+        <a class="card-img" href="events/weekend-radar.html"><img src="assets/story-brunch.webp" alt="Brunch spread"></a>
+        <p class="card-cat">WEEKEND</p>
+        <h3><a href="events/weekend-radar.html">Saturday Starts at Noon: Comedy Brunch at The Rhythm Room</a></h3>
+        <div class="card-rule"></div>
+        <p>Stand-up with your eggs. Day drinking with a punchline — plus the full Weekend Radar.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec-front" style="padding-top:32px">
+  <div class="wrap">
+    <div class="sec-head"><h2>Culture</h2><a class="more" href="archive.html?cat=culture">ALL CULTURE &rarr;</a></div>
+    <div class="sec-grid">
+      <article class="card">
+        <a class="card-img" href="culture/heart-sellers.html"><img src="assets/story-theater.webp" alt="Theater stage"></a>
+        <p class="card-cat">THEATER</p>
+        <h3><a href="culture/heart-sellers.html">"The Heart Sellers": The Warmest Thing on a Local Stage</a></h3>
+        <div class="card-rule"></div>
+        <p>Two immigrants, one Thanksgiving, 1973. Through Oct 18 at Wells Theatre.</p>
+      </article>
+      <article class="card">
+        <a class="card-img" href="stories/murals.html"><img src="assets/card-mural.webp" alt="Colorful mural downtown"></a>
+        <p class="card-cat">ART</p>
+        <h3><a href="stories/murals.html">A More Colorful Coast: The 757's Mural Movement</a></h3>
+        <div class="card-rule"></div>
+        <p>How local artists are transforming neighborhoods — one wall at a time.</p>
+      </article>
+      <article class="card">
+        <a class="card-img" href="entertainment/burlesque.html"><img src="assets/story-theater.webp" style="object-position:center 70%" alt="Stage lights"></a>
+        <p class="card-cat">NIGHTLIFE</p>
+        <h3><a href="entertainment/burlesque.html">"Champagne &amp; Sin": Norfolk's Burlesque Night Is Not Kidding Around</a></h3>
+        <div class="card-rule"></div>
+        <p>Burlesque plus live music at 37th and Zen, Saturday 8pm. Dress like you mean it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec-front" style="padding-top:32px">
+  <div class="wrap two-col">
+    <div>
+      <div class="sec-head"><h2>Guides &amp; Outdoors</h2><a class="more" href="archive.html?cat=guides">ALL GUIDES &rarr;</a></div>
+      <div class="sec-grid" style="grid-template-columns:1fr 1fr">
+        <article class="card">
+          <a class="card-img" href="outdoors/harrison-lawn.html"><img src="assets/hero-marsh.webp" alt="Marsh at sunset"></a>
+          <p class="card-cat">OUTDOORS · FREE</p>
+          <h3><a href="outdoors/harrison-lawn.html">The Best Free Seat in Norfolk: The Harrison Opera House Lawn</a></h3>
+          <div class="card-rule"></div>
+          <p>Free outdoor programming on the lawn. Blanket, friends, zero dollars.</p>
+        </article>
+        <article class="card">
+          <a class="card-img" href="spotlight.html"><img src="assets/hero-marsh.webp" style="object-position:center 70%" alt="Figure in marsh at sunset"></a>
+          <p class="card-cat">PEOPLE · SPOTLIGHT</p>
+          <h3><a href="spotlight.html">The Brackish Spotlight: Five Questions with the Founder</a></h3>
+          <div class="card-rule"></div>
+          <p>Our inaugural interview: why Brackish exists, and what's next. Want the Spotlight? Nominate yourself.</p>
+        </article>
+      </div>
+    </div>
+    <aside class="most-read">
+      <h3>MOST READ</h3>
+      <ol>
+        <li><a href="music/afi-norva.html">AFI Brings 25 Years of Beautiful Darkness to the NorVa Tonight</a></li>
+        <li><a href="news/night-shift.html">The 757 Doesn't Need Another Smash Burger. It Needs Later Hours.</a></li>
+        <li><a href="guides/waterfront.html">The Best Waterfront Spots (That Locals Actually Go To)</a></li>
+        <li><a href="music/halloween-movements.html">Movements on Halloween: The Only Correct Plan for Oct 31</a></li>
+        <li><a href="fun/marketplace-gold.html">Marketplace Gold: The $200 Chesapeake Time Machine</a></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section class="news-band" id="subscribe">
+  <div class="wrap news-inner">
+    <div class="news-brand">
+      <img src="assets/logo-b-icon.png" alt="Brackish b mark">
+      <div class="divider"></div>
+      <div>
+        <p class="eyebrow">The Brackish Newsletter</p>
+        <h3>Local stories. A wider perspective.</h3>
+        <p>Get our best stories, local recommendations and upcoming events in your inbox. Twice a week. Zero boring.</p>
+      </div>
+    </div>
+    <div>
+      <!-- Replace with Beehiiv embed when ready. This Netlify Form captures emails meanwhile. -->
+      <form class="news-form" name="newsletter" data-netlify="true" netlify-honeypot="bot-field" method="POST" action="/#subscribed">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><input name="bot-field"></p>
+        <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+        <button class="btn btn-solid" type="submit">SUBSCRIBE &rarr;</button>
+      </form>
+      <p class="news-note">Free forever. Unsubscribe anytime. We never sell your info.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-wordmark-white.png" alt="Brackish — Local stories, a wider perspective">
+        <p>The 757's essential briefing. Twice a week — sharp, local, and actually useful.</p>
+      </div>
+      <div class="footer-col">
+        <h4>READ</h4>
+        <a href="archive.html?cat=news">News</a>
+        <a href="archive.html?cat=music">Music</a>
+        <a href="archive.html?cat=guides">Guides</a>
+        <a href="spotlight.html">Spotlight interviews</a>
+      </div>
+      <div class="footer-col">
+        <h4>BRACKISH</h4>
+        <a href="about.html">Our story</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="submit.html">Get the Spotlight</a>
+      </div>
+      <div class="footer-col">
+        <h4>FOLLOW</h4>
+        <a href="https://instagram.com/readbrackish" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@readbrackish" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://x.com/readbrackish" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span id="year">2026</span> Brackish. Hampton Roads, Virginia.</p>
+      <p>AI-assisted · Human-edited · Sources cited · Opinions labeled</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
