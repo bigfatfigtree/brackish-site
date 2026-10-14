@@ -38,6 +38,7 @@
   var input = document.getElementById('searchInput');
   var results = document.getElementById('searchResults');
   var index = [
+    {t:'FBI Norfolk Is Gone. Richmond Says Don\u2019t Worry About It.', u:'/news/fbi-norfolk-consolidation.html', c:'News'},
     {t:'The 757\u2019s Most Famous Face: Vote in Round 1', u:'/faceoff.html', c:'Faceoff'},
     {t:'Matchbox Twenty\u2019s 30th Anniversary Tour Hits Virginia Beach July 3 \u2014 With the Wallflowers', u:'/music/matchbox-twenty-2027.html', c:'Music'},
     {t:'Friday Night Lights: Six of the State\u2019s Top Ten Are From the 757', u:'/sports/hs-football-week8.html', c:'Sports'},

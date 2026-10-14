@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brackishmag.com/news/fbi-norfolk-consolidation.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Brackish</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-14T17:00:00-04:00</news:publication_date>
+      <news:title>FBI Norfolk Is Gone. Richmond Says Don&#39;t Worry About It.</news:title>
+      <news:keywords>Norfolk, FBI, field office, consolidation, Richmond, Hampton Roads</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brackishmag.com/news/voting.html</loc>
     <news:news>
       <news:publication>
